@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FortuneCookie</string>
+    <string name="app_fortune">Fortune</string>
+    <string name="app_cookie">Cookie</string>
+    <string name="app_img_fortune_cookie">Fortune Cookie</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
