@@ -1,0 +1,485 @@
+[
+  {
+    "id": 1,
+    "description": "Frases Mexicanas",
+    "type": {
+      "id": 1,
+      "image_name": "fortune_cookie_type_1.jpg",
+      "name": "Mexican Cookie"
+    },
+    "phrase": [
+      {
+        "id": 1,
+        "title": "El amor eterno dura aproximadamente 3 meses."
+      },
+      {
+        "id": 2,
+        "title": "No te metas en el mundo de las drogas. Ya somos muchos y hay muy poca."
+      },
+      {
+        "id": 3,
+        "title": "Todo tiempo pasado fue anterior."
+      },
+      {
+        "id": 4,
+        "title": "Tener la conciencia limpia es síntoma de mala memoria."
+      },
+      {
+        "id": 5,
+        "title": "El que nace pobre y feo tiene grandes posibilidades de que al crecer se le desarrollen ambas condiciones."
+      },
+      {
+        "id": 6,
+        "title": "Los honestos son inadaptados sociales."
+      },
+      {
+        "id": 7,
+        "title": "El que quiera celeste, que mezcle azul y blanco."
+      },
+      {
+        "id": 8,
+        "title": "Pez que lucha contra la corriente, muere electrocutado."
+      },
+      {
+        "id": 9,
+        "title": "La esclavitud no se abolió, se cambió a 8 horas diarias."
+      },
+      {
+        "id": 10,
+        "title": "Si la montaña viene hacia ti, corre, es un derrumbe."
+      },
+      {
+        "id": 11,
+        "title": "Lo importante no es ganar, sino hacer perder al otro."
+      },
+      {
+        "id": 12,
+        "title": "Errar es humano, pero echarle la culpa a otro es más humano todavía."
+      },
+      {
+        "id": 13,
+        "title": "El que nace pa tamal nunca ta bien."
+      },
+      {
+        "id": 14,
+        "title": "Lo importante no es saber, sino tener el teléfono del que sabe."
+      },
+      {
+        "id": 15,
+        "title": "Yo no sufro de locura, la disfruto a cada minuto."
+      },
+      {
+        "id": 16,
+        "title": "Es bueno dejar el trago, lo malo es no acordarse donde."
+      },
+      {
+        "id": 17,
+        "title": "El dinero no hace la felicidad. La compra hecha."
+      },
+      {
+        "id": 18,
+        "title": "Una mujer me arrastró a la bebida y nunca tuve la cortesía de darle las gracias."
+      },
+      {
+        "id": 19,
+        "title": "Si tu novia perjudica tu estudio, deja el estudio y perjudica a tu novia."
+      },
+      {
+        "id": 20,
+        "title": "La inteligencia me persigue pero yo soy mas rápido."
+      },
+      {
+        "id": 21,
+        "title": "Huye de las tentaciones… despacio para que puedan alcanzarte."
+      },
+      {
+        "id": 22,
+        "title": "La verdad absoluta no existe y esto es absolutamente cierto."
+      },
+      {
+        "id": 23,
+        "title": "Hay un mundo mejor, pero es carísimo."
+      },
+      {
+        "id": 24,
+        "title": "Ningún tonto se queja de serlo. No les debe ir tan mal."
+      },
+      {
+        "id": 25,
+        "title": "Estudiar es desconfiar de la inteligencia del compañero de al lado."
+      },
+      {
+        "id": 26,
+        "title": "La mujer que no tiene suerte con los hombres no sabe la suerte que tiene."
+      },
+      {
+        "id": 27,
+        "title": "No hay mujer fea, sólo belleza rara."
+      },
+      {
+        "id": 28,
+        "title": "La pereza es la madre de todos los vicios y como madre, hay que respetarla."
+      },
+      {
+        "id": 29,
+        "title": "Si un pajarito te dice algo, debes estar loco pues los pájaros no hablan."
+      },
+      {
+        "id": 30,
+        "title": "En cada madre hay una suegra en potencia."
+      },
+      {
+        "id": 31,
+        "title": "Lo importante es el dinero. La salud va y viene."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "description": "Frases de amor",
+    "type": {
+      "id": 2,
+      "image_name": "fortune_cookie_type_2.jpg",
+      "name": "Love Cookie"
+    },
+    "phrase": [
+      {
+        "id": 1,
+        "title": "Deja de esperar el tren que ya has perdido."
+      },
+      {
+        "id": 2,
+        "title": "Pasa más tiempo mirándote en el espejo."
+      },
+      {
+        "id": 3,
+        "title": "El amor te sonreirá esta semana."
+      },
+      {
+        "id": 4,
+        "title": "Personas agradables y con talento se cruzarán en tu camino y estimularán tu imaginación."
+      },
+      {
+        "id": 5,
+        "title": "Tienes un agudo sentido del humor y sabes disfrutar de los buenos momentos."
+      },
+      {
+        "id": 6,
+        "title": "Recuerda por qué estás aquí."
+      },
+      {
+        "id": 7,
+        "title": "La naturaleza, el tiempo y la pacienca son los tres mejores doctores."
+      },
+      {
+        "id": 8,
+        "title": "El tiempo es el mejor consejero."
+      },
+      {
+        "id": 9,
+        "title": "Haz un cambio claro."
+      },
+      {
+        "id": 10,
+        "title": "Descubre el mundo de tu pareja. Dos mundos son más ricos que uno solo."
+      },
+      {
+        "id": 11,
+        "title": "Nunca puedes tener ni demasiados calcetines ni demasiados amigos."
+      },
+      {
+        "id": 12,
+        "title": "El amor se muestra tal y como es."
+      },
+      {
+        "id": 13,
+        "title": "Mantén la confianza en ti mismo, otros te seguirán cuando cambies de rumbo."
+      },
+      {
+        "id": 14,
+        "title": "¿Puedes darme la dirección? (“¿A dónde?”) A tu corazón"
+      },
+      {
+        "id": 15,
+        "title": "No ignores los pequeños detalles. Ellos son la llave para el triunfo."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "description": "Frases de fortuna",
+    "type": {
+      "id": 3,
+      "image_name": "fortune_cookie_type_3.jpg",
+      "name": "Fortune Cookie "
+    },
+    "phrase": [
+      {
+        "id": 1,
+        "title": "El que no sabe gozar de la ventura cuando le viene, no debe quejarse si se pasa."
+      },
+      {
+        "id": 2,
+        "title": "Esta que llaman por ahí Fortuna es una mujer borracha y antojadiza, y sobre todo, ciega, y así no ve lo que hace, ni sabe a quien derriba."
+      },
+      {
+        "id": 3,
+        "title": "Es falso que se haya hecho fortuna, cuando no se sabe disfrutarla."
+      },
+      {
+        "id": 4,
+        "title": "Más de un hombre hubiera sido peor si su fortuna hubiese sido mejor."
+      },
+      {
+        "id": 5,
+        "title": "He sido un hombre afortunado; en la vida nada me ha sido fácil."
+      },
+      {
+        "id": 6,
+        "title": "Suerte es lo que sucede cuando la preparación y la oportunidad se encuentran y fusionan."
+      },
+      {
+        "id": 7,
+        "title": "La fortuna es como un vestido: muy holgado nos embaraza, y muy estrecho nos oprime."
+      },
+      {
+        "id": 8,
+        "title": "La Fortuna da demasiado a muchos, pero a ninguno bastante."
+      },
+      {
+        "id": 9,
+        "title": "Cuando acude la buena dicha, acude para todo, y lo mismo cuando la desdicha acude."
+      },
+      {
+        "id": 10,
+        "title": "El hombre que hace su fortuna en un año debería ser ahorcado doce meses antes."
+      },
+      {
+        "id": 1,
+        "title": "Si no eres parte de la solución, eres parte del problema."
+      },
+      {
+        "id": 1,
+        "title": "Si no eres parte de la solución, eres parte del problema."
+      },
+      {
+        "id": 1,
+        "title": "Si no eres parte de la solución, eres parte del problema."
+      },
+      {
+        "id": 1,
+        "title": "Si no eres parte de la solución, eres parte del problema."
+      },
+      {
+        "id": 1,
+        "title": "Si no eres parte de la solución, eres parte del problema."
+      },
+      {
+        "id": 1,
+        "title": "Si no eres parte de la solución, eres parte del problema."
+      },
+      {
+        "id": 1,
+        "title": "Si no eres parte de la solución, eres parte del problema."
+      },
+      {
+        "id": 1,
+        "title": "Si no eres parte de la solución, eres parte del problema."
+      },
+      {
+        "id": 1,
+        "title": "Si no eres parte de la solución, eres parte del problema."
+      },
+      {
+        "id": 1,
+        "title": "Si no eres parte de la solución, eres parte del problema."
+      },
+      {
+        "id": 1,
+        "title": "Si no eres parte de la solución, eres parte del problema."
+      },
+      {
+        "id": 1,
+        "title": "Si no eres parte de la solución, eres parte del problema."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "description": "Frases para Niños",
+    "type": {
+      "id": 4,
+      "image_name": "fortune_cookie_type_4.jpg",
+      "name": "Kids Cookie "
+    },
+    "phrase": [
+      {
+        "id": 1,
+        "title": "Sigue tus sueños, puedes ser todo lo que desees."
+      },
+      {
+        "id": 2,
+        "title": "No importa cuántos amigos tienes, siempre hay lugar para uno más."
+      },
+      {
+        "id": 3,
+        "title": "Nunca está mal hacer una pregunta, está mal quedarse sin saber."
+      },
+      {
+        "id": 4,
+        "title": "¡Hoy es tu día para brillar!"
+      },
+      {
+        "id": 5,
+        "title": "La oportunidad tocará a tu puerta, cuando llegue, ábrela."
+      },
+      {
+        "id": 6,
+        "title": "Puedes encontrar tesoros donde otros no ven nada."
+      },
+      {
+        "id": 7,
+        "title": "Anímate a descubrir cosas nuevas."
+      },
+      {
+        "id": 8,
+        "title": "Dí siempre la verdad, te llevará por mejores caminos."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "description": "Proverbios",
+    "type": {
+      "id": 5,
+      "image_name": "fortune_cookie_type_5.jpg",
+      "name": "Proverbs Cookies"
+    },
+    "phrase": [
+      {
+        "id": 1,
+        "title": "¡Qué curioso es el hombre, nacer no pide, vivir no sabe, morir no quiere!."
+      },
+      {
+        "id": 2,
+        "title": "Le pedí a Dios todo para gozar la vida, él me dio vida para gozarlo todo."
+      },
+      {
+        "id": 3,
+        "title": "A largos sentimientos, largas consecuencias."
+      },
+      {
+        "id": 4,
+        "title": "Al comer retoños de bambú, recuerda al hombre que los plantó."
+      },
+      {
+        "id": 5,
+        "title": "Ama a tus vecinos, pero no te deshagas de la cerca."
+      },
+      {
+        "id": 6,
+        "title": "Ámame cuando menos lo merezca, ya que es cuando más lo necesito."
+      },
+      {
+        "id": 7,
+        "title": "Antes de iniciar la labor de cambiar el mundo, da tres vueltas por tu propia casa."
+      },
+      {
+        "id": 8,
+        "title": "Aprender sin pensar es inútil, pensar sin aprender peligroso."
+      },
+      {
+        "id": 9,
+        "title": "Apúrate lentamente."
+      },
+      {
+        "id": 10,
+        "title": "Cuando el dinero habla, la verdad calla."
+      },
+      {
+        "id": 11,
+        "title": "Cuando llegues a la última página, cierra el libro."
+      },
+      {
+        "id": 12,
+        "title": "Cuando el genio apunta a la Luna, el tonto se queda mirando el dedo."
+      },
+      {
+        "id": 13,
+        "title": "Cuando te inunde una enorme alegría, no prometas nada a nadie. Cuando te domine un gran enojo, no contestes ninguna carta."
+      },
+      {
+        "id": 14,
+        "title": "Cuando tres marchan juntos tiene que haber uno que mande."
+      },
+      {
+        "id": 15,
+        "title": "Dime y olvidaré, muéstrame y podría recordar, involúcrame y entenderé."
+      },
+      {
+        "id": 16,
+        "title": "Disfruta la vida, es más tarde de lo que crees."
+      },
+      {
+        "id": 17,
+        "title": "El agua hace flotar el barco, pero también puede hundirlo."
+      },
+      {
+        "id": 18,
+        "title": "El árbol más fuerte y frondoso vive de lo que tiene debajo."
+      },
+      {
+        "id": 19,
+        "title": "El bien que hicimos en la víspera es el que nos trae la felicidad por la mañana..."
+      },
+      {
+        "id": 20,
+        "title": "El corazón jamás habla, pero hay que escucharlo para entender."
+      },
+      {
+        "id": 21,
+        "title": "El dragón inmóvil en las aguas profundas se convierte en presa de los cangrejos."
+      },
+      {
+        "id": 22,
+        "title": "El hombre que no sabe sonreír no debe abrir la tienda."
+      },
+      {
+        "id": 23,
+        "title": "El jade necesita ser tallado para ser una gema."
+      },
+      {
+        "id": 24,
+        "title": "El perro en la perrera se rasca las pulgas; el perro que caza no las siente."
+      },
+      {
+        "id": 25,
+        "title": "El que comete un mal y tiene temor de que se sepa, posee todavía una semilla de bueno dentro de su maldad; pero el que hace un bien y está ansioso de que se enteren, tiene todavía una raíz de mal en su bondad."
+      },
+      {
+        "id": 26,
+        "title": "El que estudia diez años en la oscuridad será universalmente conocido como quiera."
+      },
+      {
+        "id": 27,
+        "title": "El que ha desplazado la montaña es el que comenzó por quitar las pequeñas piedras."
+      },
+      {
+        "id": 28,
+        "title": "El que hace el bien de los demás hace el suyo."
+      },
+      {
+        "id": 29,
+        "title": "El que teme sufrir, sufre de temor."
+      },
+      {
+        "id": 30,
+        "title": "El que ve el cielo en el agua ve los peces en los árboles."
+      },
+      {
+        "id": 31,
+        "title": "El sabio no dice lo que sabe y el necio no sabe lo que dice."
+      }
+    ]
+  }
+]
