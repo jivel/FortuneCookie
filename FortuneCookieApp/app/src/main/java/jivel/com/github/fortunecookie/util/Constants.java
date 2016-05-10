@@ -8,6 +8,7 @@ import com.google.gson.GsonBuilder;
  * Created by jimenezlav on 18/04/16.
  */
 public class Constants {
+    public static final String KEY_FORTUNE_COOKIE = "fortuneCookie";
     public static final Gson GSON;
 
     static {

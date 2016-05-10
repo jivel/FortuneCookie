@@ -9,8 +9,12 @@ import org.json.JSONArray;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 
 import jivel.com.github.fortunecookie.model.FortuneCookie;
 import jivel.com.github.fortunecookie.service.IFortuneCookieService;
@@ -45,14 +49,23 @@ public class FortuneCookieServiceImpl implements IFortuneCookieService {
 
     private List<FortuneCookie> getListOfThreeCookies(FortuneCookie[] fortuneCookiesArray) {
         List<FortuneCookie> fortuneCookiesAll = Arrays.asList(fortuneCookiesArray);
+        final int capacity = 3;
+        Set<FortuneCookie> fortuneCookies = getListOfThreeCookies (fortuneCookiesAll, new HashSet<FortuneCookie>(capacity));
         List<FortuneCookie> fortuneCookiesThree = new ArrayList<>();
-        int size = fortuneCookiesAll.size();
-        Log.i(TAG,"Total de galletas: " + size);
-        for (int i = 0; i < 3; i ++) {
-            int randomPosition = randomPosition(size);
-            fortuneCookiesThree.add(fortuneCookiesAll.get(randomPosition));
-        }
+        for (FortuneCookie fortuneCookie : fortuneCookies)
+            fortuneCookiesThree.add(fortuneCookie);
+
         return fortuneCookiesThree;
+    }
+
+    private Set<FortuneCookie> getListOfThreeCookies(List<FortuneCookie> fortuneCookiesAll, Set<FortuneCookie> fortuneCookies) {
+        final int capacity = 3;
+        int size = fortuneCookiesAll.size();
+        int randomPosition = randomPosition(size);
+        fortuneCookies.add(fortuneCookiesAll.get(randomPosition));
+        if (fortuneCookies.size() != capacity)
+            getListOfThreeCookies (fortuneCookiesAll, fortuneCookies);
+        return fortuneCookies;
     }
 
     private int randomPosition(int size) {

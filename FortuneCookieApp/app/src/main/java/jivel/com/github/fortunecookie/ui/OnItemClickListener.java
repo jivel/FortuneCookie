@@ -1,7 +1,5 @@
 package jivel.com.github.fortunecookie.ui;
 
-import jivel.com.github.fortunecookie.model.FortuneCookieContentOld;
-
 /**
  * Created by jimenezlav on 17/04/16.
  */

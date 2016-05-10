@@ -1,9 +1,9 @@
 package jivel.com.github.fortunecookie.presenter;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.util.Log;
+
+import com.google.gson.Gson;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import jivel.com.github.fortunecookie.BuildConfig;
 import jivel.com.github.fortunecookie.repository.IFortuneCookieRepository;
 import jivel.com.github.fortunecookie.model.FortuneCookie;
 import jivel.com.github.fortunecookie.ui.cookies.FortuneCookieContract;
-import jivel.com.github.fortunecookie.ui.cookies.FortuneCookieDetailFragment;
+import jivel.com.github.fortunecookie.util.Constants;
 
 /**
  * Created by jimenezlav on 23/04/16.
@@ -20,10 +20,10 @@ public class FortuneCookiePresenter implements FortuneCookieContract.UserActionL
 
     private static final String TAG = FortuneCookiePresenter.class.getSimpleName();
 
-    private FortuneCookieContract.View mView;
+    private FortuneCookieContract.ViewFortuneCookie mView;
     private IFortuneCookieRepository mFortuneCookieRepository;
 
-    public FortuneCookiePresenter(FortuneCookieContract.View view, IFortuneCookieRepository fortuneCookieRepository) {
+    public FortuneCookiePresenter(FortuneCookieContract.ViewFortuneCookie view, IFortuneCookieRepository fortuneCookieRepository) {
         this.mView = view;
         this.mFortuneCookieRepository = fortuneCookieRepository;
     }
@@ -53,11 +53,10 @@ public class FortuneCookiePresenter implements FortuneCookieContract.UserActionL
 
     @Override
     public void fortuneCookieDetail(FortuneCookie fortuneCookie) {
-        Fragment fragment = FortuneCookieDetailFragment.newInstance();
-        Bundle bundle=new Bundle();
-        bundle.putString("fortuneCookie", fortuneCookie.getDescription());
-        fragment.setArguments(bundle);
-        Log.i(TAG,fortuneCookie.getDescription());
-
+        String toJson = new Gson().toJson(fortuneCookie);
+        Log.i(TAG,toJson);
+        Bundle arguments = new Bundle();
+        arguments.putString(Constants.KEY_FORTUNE_COOKIE, toJson);
+        mView.launchFragment(arguments);
     }
 }

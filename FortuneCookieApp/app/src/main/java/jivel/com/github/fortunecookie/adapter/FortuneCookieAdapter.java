@@ -28,7 +28,8 @@ public class FortuneCookieAdapter extends RecyclerView.Adapter<FortuneCookieAdap
     private Context mContext;
 
     public FortuneCookieAdapter() {
-        this.mFortuneCookies = new ArrayList<>();
+        if (null == mFortuneCookies)
+            this.mFortuneCookies = new ArrayList<>();
     }
 
     public FortuneCookieAdapter(List<FortuneCookie> fortuneCookies) {
@@ -74,7 +75,7 @@ public class FortuneCookieAdapter extends RecyclerView.Adapter<FortuneCookieAdap
         return this.mFortuneCookies.size();
     }
 
-    public void setmItemClickListener(OnItemClickListener<FortuneCookie> mItemClickListener) {
+    public void setItemClickListener(OnItemClickListener<FortuneCookie> mItemClickListener) {
         this.mItemClickListener = mItemClickListener;
     }
 
@@ -102,8 +103,9 @@ public class FortuneCookieAdapter extends RecyclerView.Adapter<FortuneCookieAdap
 
         public void bindFortuneCookie(FortuneCookie fortuneCookie) {
             this.mFortuneCookie = fortuneCookie;
+            String description = new StringBuilder().append(this.mFortuneCookie.getPhrases().size()).append(" ").append(mContext.getString(R.string.app_fortune_cookie_phrases)).toString();
             this.textViewType.setText(this.mFortuneCookie.getType().getName());
-            this.textViewDescription.setText(this.mFortuneCookie.getPhrases().size() + " phrases");
+            this.textViewDescription.setText(description);
             int resIdImageView = getResIdImageView();
             this.imageViewFortuneCookie.setImageResource(resIdImageView);
         }

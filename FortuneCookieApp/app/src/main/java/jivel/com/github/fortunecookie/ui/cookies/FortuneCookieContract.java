@@ -1,6 +1,7 @@
 package jivel.com.github.fortunecookie.ui.cookies;
 
 import android.content.Intent;
+import android.os.Bundle;
 
 import java.util.List;
 
@@ -13,20 +14,15 @@ public class FortuneCookieContract {
 
     public interface View {
         void setProgressVisible(boolean visible);
-
-        void showFortuneCookie(List<FortuneCookie> fortuneCookies);
-
         void showRequestError();
-
-        void launchActivity(Intent intent);
+        void launchFragment(Bundle bundle);
     }
 
-    public interface ViewDetail {
-        void setProgressVisible(boolean visible);
+    public interface ViewFortuneCookie extends View {
+        void showFortuneCookie(List<FortuneCookie> fortuneCookies);
+    }
 
-        void showRequestError();
-
-        void launchActivity(Intent intent);
+    public interface ViewFortuneCookieDetail extends View {
     }
 
     public interface UserActionListener {

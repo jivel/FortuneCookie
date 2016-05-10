@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="jivel.com.github.fortunecookie.ui.home.HomeFragment">
+    tools:context="jivel.com.github.fortunecookie.ui.home.HomeFragment"
+    android:background="@color/accent_material_dark">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -10,7 +11,7 @@
         android:id="@+id/imageView"
         android:layout_gravity="center"
         android:src="@drawable/fortune_cookie"
-        android:contentDescription="@string/app_img_fortune_cookie" />
+        android:contentDescription="@string/app_name" />
 
     <TextView
         android:layout_width="wrap_content"

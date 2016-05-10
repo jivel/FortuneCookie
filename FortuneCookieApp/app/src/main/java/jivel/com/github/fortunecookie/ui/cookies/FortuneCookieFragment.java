@@ -1,7 +1,5 @@
 package jivel.com.github.fortunecookie.ui.cookies;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,7 +8,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import java.io.InputStream;
 import java.util.List;
 
 import butterknife.Bind;
@@ -21,8 +18,8 @@ import jivel.com.github.fortunecookie.presenter.FortuneCookiePresenter;
 import jivel.com.github.fortunecookie.repository.impl.FortuneCookieRepositoryImpl;
 import jivel.com.github.fortunecookie.service.impl.FortuneCookieServiceImpl;
 import jivel.com.github.fortunecookie.ui.BaseFragment;
-import jivel.com.github.fortunecookie.ui.FortuneCookieActivity;
 import jivel.com.github.fortunecookie.ui.OnItemClickListener;
+import jivel.com.github.fortunecookie.ui.SpacesItemDecoration;
 
 /**
  * A fragment representing a list of Items.
@@ -30,7 +27,7 @@ import jivel.com.github.fortunecookie.ui.OnItemClickListener;
  * Activities containing this fragment MUST implement the {@link OnItemClickListener}
  * interface.
  */
-public class FortuneCookieFragment extends BaseFragment implements FortuneCookieContract.View {
+public class FortuneCookieFragment extends BaseFragment implements FortuneCookieContract.ViewFortuneCookie {
 
     @Bind(R.id.list_fortune_cookie)
     RecyclerView mListFortuneCookie;
@@ -78,7 +75,7 @@ public class FortuneCookieFragment extends BaseFragment implements FortuneCookie
 
     @Override
     public void showFortuneCookie(List<FortuneCookie> fortuneCookies) {
-        this.mFortuneCookieAdapter.setFortuneCookies(fortuneCookies);
+            this.mFortuneCookieAdapter.setFortuneCookies(fortuneCookies);
     }
 
     @Override
@@ -86,7 +83,19 @@ public class FortuneCookieFragment extends BaseFragment implements FortuneCookie
     }
 
     @Override
-    public void launchActivity(Intent intent) {
+    public void launchFragment(Bundle bundle) {
+        FragmentManager fragmentManager = getFragmentManager();
+        if (null != fragmentManager) {
+            Fragment fragment = FortuneCookieDetailFragment.newInstance(bundle);
+            fragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, fragment)
+                    .setCustomAnimations(R.anim.slide_in_left,
+                            R.anim.slide_out_right,
+                            R.anim.slide_in_right,
+                            R.anim.slide_out_left)
+                    .addToBackStack(fragment.toString())
+                    .commit();
+        }
 
     }
 
@@ -102,13 +111,16 @@ public class FortuneCookieFragment extends BaseFragment implements FortuneCookie
     private FortuneCookieAdapter createFortuneCookieAdapter(@Nullable OnItemClickListener<FortuneCookie> onItemClickListener) {
         FortuneCookieAdapter fortuneCookieAdapter = new FortuneCookieAdapter();
         if (null != onItemClickListener)
-            fortuneCookieAdapter.setmItemClickListener(onItemClickListener);
+            fortuneCookieAdapter.setItemClickListener(onItemClickListener);
         return  fortuneCookieAdapter;
     }
 
     private void initializeFortuneCookies() {
+        SpacesItemDecoration decoration = new SpacesItemDecoration(24);
         this.mListFortuneCookie.setLayoutManager(new LinearLayoutManager(getContext()));
+        this.mListFortuneCookie.setHasFixedSize(true);
         this.mListFortuneCookie.setAdapter(this.mFortuneCookieAdapter);
+        this.mListFortuneCookie.addItemDecoration(decoration);
     }
 
 }
