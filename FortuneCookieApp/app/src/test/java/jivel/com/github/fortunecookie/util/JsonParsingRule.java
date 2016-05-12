@@ -16,7 +16,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 
 /**
- * Created by jimenezlav on 18/04/16.
+ * Created by jimenezlav on 17/04/16.
  */
 public class JsonParsingRule implements TestRule {
 

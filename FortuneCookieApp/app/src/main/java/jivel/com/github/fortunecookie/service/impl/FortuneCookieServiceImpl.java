@@ -22,7 +22,7 @@ import jivel.com.github.fortunecookie.util.Constants;
 import jivel.com.github.fortunecookie.util.JsonUtil;
 
 /**
- * Created by jimenezlav on 23/04/16.
+ * Created by jimenezlav on 17/04/16.
  */
 public class FortuneCookieServiceImpl implements IFortuneCookieService {
 

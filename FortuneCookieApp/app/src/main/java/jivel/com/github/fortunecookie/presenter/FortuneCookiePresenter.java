@@ -14,7 +14,7 @@ import jivel.com.github.fortunecookie.ui.cookies.FortuneCookieContract;
 import jivel.com.github.fortunecookie.util.Constants;
 
 /**
- * Created by jimenezlav on 23/04/16.
+ * Created by jimenezlav on 17/04/16.
  */
 public class FortuneCookiePresenter implements FortuneCookieContract.UserActionListener {
 

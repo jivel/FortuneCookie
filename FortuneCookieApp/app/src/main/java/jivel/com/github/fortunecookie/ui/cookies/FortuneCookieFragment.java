@@ -23,6 +23,8 @@ import jivel.com.github.fortunecookie.ui.OnItemClickListener;
 import jivel.com.github.fortunecookie.ui.SpacesItemDecoration;
 
 /**
+ * Created by jimenezlav on 17/04/16.
+ *
  * A fragment representing a list of Items.
  * <p/>
  * Activities containing this fragment MUST implement the {@link OnItemClickListener}

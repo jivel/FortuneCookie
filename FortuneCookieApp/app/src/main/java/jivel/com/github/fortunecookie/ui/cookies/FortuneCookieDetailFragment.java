@@ -25,7 +25,7 @@ import jivel.com.github.fortunecookie.ui.BaseFragment;
 import jivel.com.github.fortunecookie.util.Constants;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by jimenezlav on 17/04/16.
  */
 public class FortuneCookieDetailFragment extends BaseFragment implements FortuneCookieContract.ViewFortuneCookieDetail {
 

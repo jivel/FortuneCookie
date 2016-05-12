@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by jimenezlav on 23/04/16.
+ * Created by jimenezlav on 17/04/16.
  */
 public class FortuneCookieContent {
 

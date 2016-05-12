@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 /**
- * Created by jimenezlav on 18/04/16.
+ * Created by jimenezlav on 17/04/16.
  */
 public class FortuneCookieTest {
 

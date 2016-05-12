@@ -18,6 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Created by jimenezlav on 17/04/16.
+ *
  * {@link RecyclerView.Adapter} that can display a {@link FortuneCookie} and makes a call to the
  * specified {@link OnItemClickListener}.
  */

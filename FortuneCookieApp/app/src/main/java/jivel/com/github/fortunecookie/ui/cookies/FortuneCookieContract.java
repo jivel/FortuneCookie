@@ -9,7 +9,7 @@ import jivel.com.github.fortunecookie.model.FortuneCookie;
 import jivel.com.github.fortunecookie.model.Phrase;
 
 /**
- * Created by jimenezlav on 23/04/16.
+ * Created by jimenezlav on 17/04/16.
  */
 public class FortuneCookieContract {
 

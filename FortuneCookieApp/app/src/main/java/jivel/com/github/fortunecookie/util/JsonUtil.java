@@ -17,7 +17,7 @@ import java.lang.reflect.Field;
 import jivel.com.github.fortunecookie.R;
 
 /**
- * Created by jimenezlav on 18/04/16.
+ * Created by jimenezlav on 17/04/16.
  */
 public class JsonUtil {
 

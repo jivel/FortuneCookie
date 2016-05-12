@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 /**
- * Created by jimenezlav on 18/04/16.
+ * Created by jimenezlav on 17/04/16.
  */
 public class Type implements Serializable {
 
