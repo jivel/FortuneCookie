@@ -6,6 +6,7 @@ import android.os.Bundle;
 import java.util.List;
 
 import jivel.com.github.fortunecookie.model.FortuneCookie;
+import jivel.com.github.fortunecookie.model.Phrase;
 
 /**
  * Created by jimenezlav on 23/04/16.
@@ -23,6 +24,7 @@ public class FortuneCookieContract {
     }
 
     public interface ViewFortuneCookieDetail extends View {
+        void showPhrase(String phrase);
     }
 
     public interface UserActionListener {

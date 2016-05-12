@@ -2,33 +2,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="jivel.com.github.fortunecookie.ui.cookies.FortuneCookieDetailFragment">
+    tools:context="jivel.com.github.fortunecookie.ui.cookies.FortuneCookieDetailFragment"
+    android:padding="@dimen/margin_medium">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/imageViewFortuneCookie"
-        android:layout_gravity="center_horizontal|top"
-        android:src="@drawable/fortune_cookie_type_4"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        android:src="@drawable/fortune_cookie_six" />
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <android.support.design.widget.FloatingActionButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:minHeight="200dp"
-        android:layout_gravity="center_vertical">
+        android:id="@+id/buttonReset"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_revert" />
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
-            android:id="@+id/textView"
-            android:layout_gravity="center_vertical"
-            android:gravity="center_horizontal"
-            android:textColor="@color/colorAccent" />
-    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Esta que llaman por ahí Fortuna es una mujer borracha y antojadiza, y sobre todo, ciega, y así no ve lo que hace, ni sabe a quien derriba."
+        android:id="@+id/textViewPhrase"
+        android:layout_gravity="center_horizontal|top"
+        android:textColor="@color/colorAccent"
+        android:padding="@dimen/margin_small"
+        android:textAlignment="inherit"
+        android:singleLine="false" />
 
 </FrameLayout>

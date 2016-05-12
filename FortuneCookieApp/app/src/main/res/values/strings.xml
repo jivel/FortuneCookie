@@ -3,5 +3,7 @@
     <string name="app_fortune">Fortune</string>
     <string name="app_cookie">Cookie</string>
     <string name="app_fortune_cookie_phrases">phrases</string>
+    <string name="app_fortune_button_reset">Reset</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_activity_fea">MainActivityFea</string>
 </resources>

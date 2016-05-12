@@ -1,17 +1,26 @@
 package jivel.com.github.fortunecookie.ui.cookies;
 
 
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 
+import java.util.List;
+import java.util.Random;
+
 import butterknife.Bind;
+import butterknife.OnClick;
 import jivel.com.github.fortunecookie.R;
 import jivel.com.github.fortunecookie.model.FortuneCookie;
+import jivel.com.github.fortunecookie.model.Phrase;
 import jivel.com.github.fortunecookie.ui.BaseFragment;
 import jivel.com.github.fortunecookie.util.Constants;
 
@@ -23,6 +32,16 @@ public class FortuneCookieDetailFragment extends BaseFragment implements Fortune
 
     @Bind(R.id.imageViewFortuneCookie)
     ImageView imageViewFortuneCookie;
+
+    @Bind(R.id.textViewPhrase)
+    TextView textViewPhrase;
+
+    @OnClick(R.id.buttonReset)
+    public void buttonReset() {
+        getFragmentManager().popBackStack();
+    }
+
+    private  FortuneCookie mFortuneCookie;
 
     public FortuneCookieDetailFragment() {
     }
@@ -44,6 +63,9 @@ public class FortuneCookieDetailFragment extends BaseFragment implements Fortune
         Bundle bundle = getArguments();
         if (null != bundle )
             handleBundle(bundle);
+        changeTitleToolBar();
+        animateImageViewFortuneCookie();
+        getRandomPhrase();
     }
 
     @Override
@@ -66,26 +88,36 @@ public class FortuneCookieDetailFragment extends BaseFragment implements Fortune
 
     }
 
-    private void handleBundle(Bundle bundle) {
-        String json = bundle.getString(Constants.KEY_FORTUNE_COOKIE);
-        FortuneCookie fortuneCookie = new Gson().fromJson(json, FortuneCookie.class);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle(fortuneCookie.getType().getName());
-        imageViewFortuneCookie.setImageResource(getResIdImageView(fortuneCookie.getId()));
+    @Override
+    public void showPhrase(String phrase) {
+        textViewPhrase.setText(phrase);
     }
 
-    private int getResIdImageView(String id) {
-        if ("1".equals(id))
-            return R.drawable.fortune_cookie_type_1;
-        else if ("2".equals(id))
-            return R.drawable.fortune_cookie_type_2;
-        else if ("3".equals(id))
-            return R.drawable.fortune_cookie_type_3;
-        else if ("4".equals(id))
-            return R.drawable.fortune_cookie_type_4;
-        else if ("5".equals(id))
-            return R.drawable.fortune_cookie_type_5;
-        else
-            return R.drawable.fortune_cookie;
+    private void handleBundle(Bundle bundle) {
+        String json = bundle.getString(Constants.KEY_FORTUNE_COOKIE);
+        mFortuneCookie = new Gson().fromJson(json, FortuneCookie.class);
     }
+
+    private void changeTitleToolBar() {
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle(mFortuneCookie.getType().getName());
+    }
+
+    private void animateImageViewFortuneCookie() {
+
+    }
+
+    private void getRandomPhrase() {
+        List<Phrase> phrases = this.mFortuneCookie.getPhrases();
+        int position = randomPosition(phrases.size());
+        String phrase = phrases.get(position).getTitle();
+        this.showPhrase(phrase);
+    }
+
+    private int randomPosition(int size) {
+        Random random = new Random();
+        int position = random.nextInt(size);
+        return position;
+    }
+
 
 }
